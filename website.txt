@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>USXpert | Appliance Technician Services in D.C.</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #000;
+      background-color: #fff;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #000;
+    }
+    nav img {
+      max-height: 115px; 
+      height: auto;
+      width: auto;
+      display: block;
+    }
+    .hero {
+      text-align: center;
+      padding: 5rem 1rem;
+      background-color: #f9fafb;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.125rem;
+      max-width: 40rem;
+      margin: 1rem auto;
+      color: #4b5563;
+    }
+    .hero button {
+      font-size: 1.125rem;
+      padding: 0.75rem 1.5rem;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .hero button:hover {
+      background-color: #333;
+    }
+    .section {
+      padding: 4rem 1.5rem;
+    }
+    .section.bg-light {
+      background-color: #f9fafb;
+    }
+    .section h3 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+    .services, .clients-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 72rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .service-box {
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+    }
+    .clients-list li {
+      list-style: none;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #1f2937;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 0.75rem;
+      padding: 0.75rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .contact-form button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1.125rem;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      display: block;
+      margin: 0 auto;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .contact-form button:hover {
+      background-color: #333;
+    }
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    #thank-you {
+      display: none;
+      text-align: center;
+      padding: 5rem 1rem;
+      background-color: #f9fafb;
+    }
+    #thank-you h1 {
+      font-size: 2.5rem;
+    }
+    #thank-you p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+      color: #4b5563;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="https://lh3.googleusercontent.com/pw/AP1GczMPhRkorAjqGxk8nWXMonbcuLCfJWPTNz_BA4J-A5G6g8OmP1wyZMMtpFqP6EaE03CBbe85lyuaI1vp_qP9z1aS7CZvYRPUSQlVwWvquUB2o7Bmaw=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/pw/AP1GczMPhRkorAjqGxk8nWXMonbcuLCfJWPTNz_BA4J-A5G6g8OmP1wyZMMtpFqP6EaE03CBbe85lyuaI1vp_qP9z1aS7CZvYRPUSQlVwWvquUB2o7Bmaw=w600-h315-p-k" /> </a>
+    <div>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h2>Trusted Technician Services in Washington, D.C.</h2>
+    <p>Diagnostics, maintenance, and support for your home appliances — handled by a dependable, hands-on expert team.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Book a Service</button>
+  </section>
+
+  <section id="services" class="section">
+    <h3>Our Services</h3>
+    <div class="services">
+      <div class="service-box">
+        <h4>Washer + Dryer Repair</h4>
+        <p>Fast, reliable repair and maintenance for all washer and dryer brands and models.</p>
+      </div>
+      <div class="service-box">
+        <h4>Microwave Repair</h4>
+        <p>Diagnostics and repairs for built-in and countertop microwaves.</p>
+      </div>
+      <div class="service-box">
+        <h4>Other Appliances</h4>
+        <p>Excellent service and repairs for all other home appliances.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section bg-light">
+    <h3>About UsXpert</h3>
+    <p style="text-align:center; max-width: 56rem; margin: 0 auto; font-size: 1.125rem; color: #4b5563">
+      Based in Washington, D.C., UsXpert is a technician services company led by a hands-on lead technician who ensures each project meets the highest standards. We focus on long-term solutions, rapid response, and unmatched technical know-how. Whether it's a quick diagnostic or a full appliance overhaul, we bring dependability to every job.
+    </p>
+  </section>
+
+  <section id="clients" class="section">
+    <h3>Who We Serve</h3>
+    <p style="text-align:center; color: #4b5563; font-size: 1.125rem; max-width: 56rem; margin: 0 auto 2rem">
+      We proudly support a wide range of D.C. homeowners and work with reputable property management companies:
+    </p>
+    <ul class="clients-list">
+      <li>Samson Properties</li>
+      <li>Scout Properties</li>
+      <li>Local Homeowners</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section bg-light">
+    <h3>Get in Touch</h3>
+    <h3 style="font-size: 120%; text-align: center;"> Call us here at: (703) 869 - 2009</h3>
+    <h4 style = "text-align: center;"> OR</h4>
+    <p style="text-align:center; color: #4b5563; margin-bottom: 1.5rem">Ready to schedule a service or have a question? Reach out today and we'll respond promptly.</p>
+    <form class="contact-form" style="max-width: 36rem; margin: 0 auto;" onsubmit="handleSubmit(event)">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section id="thank-you">
+    <h1>Thank You!</h1>
+    <p>Your message has been sent successfully. We'll get back to you soon.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 UsXpert. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const data = new FormData(form);
+      fetch("https://formsubmit.co/ajax/usxpertllc@gmail.com", {
+        method: "POST",
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: data
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success === "true") {
+          document.querySelector('#contact').style.display = 'none';
+          document.querySelector('#thank-you').style.display = 'block';
+        } else {
+          alert("There was an error sending your message. Please try again later.");
+        }
+      })
+      .catch(error => {
+        console.error(error);
+        alert("There was an error sending your message. Please try again later.");
+      });
+    }
+  </script>
+</body>
+</html>
